@@ -11,48 +11,53 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;900&family=Montserrat:wght@200;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Inconsolata', monospace;
         }
 
         section {
-            min-height: 900px;
-            background-color: antiquewhite;
+            min-height: 1000px;
+            text-align: center;
         }
 
-        footer {
-            height: 400px;
+        #plan {
+            min-height: 500px;
         }
 
         .flex {
             display: flex;
-            column-gap: 20px;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         #hero {
             background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/723/original/sd-1.jpg');
             background-position: center;
             background-repeat: no-repeat;
+            background-size: cover;
             padding-top: 250px;
-            text-align: center;
         }
 
         h1 {
-            font-family: 'Inconsolata', monospace;
             font-size: 80px;
             color: white;
             text-shadow: 1px 1px 2px #e36414, 0 0 1em #fb8b24;
+        }
+
+        h2 {
+            font-size: 45px;
         }
 
         h3 {
             font-family: 'Montserrat', monospace;
             letter-spacing: 2px;
             color: rgb(40, 22, 4);
-            width: 50ch;
         }
 
         p {
@@ -73,18 +78,79 @@
             border-radius: 40px;
             color: #e36414;
             box-shadow: 1px 1px 2px #e36414, 0 0 1em #fb8b24;
+            transition: .4s ease-in-out;
+        }
+
+        button:focus,
+        button:hover {
+            background-color: #e36414;
+            color: white;
+            box-shadow: 1px 1px 2px white, 0 0 1em white;
+            z-index: 2;
         }
 
         #why {
-            max-width: 900px;
+            justify-content: space-around;
+            background-color: antiquewhite;
             margin: 0 auto;
             place-items: center;
+            text-align: right;
         }
 
         img {
-            max-width: 500px;
+            max-width: 400px;
+        }
+
+        #media {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        blockquote {
+            max-width: 400px;
+            max-height: 500px;
+        }
+
+        .card {
+            width: 300px;
+            text-align: left;
+            max-height: 500px;
+        }
+
+        .small-card {
+            width: 200px;
+        }
+
+        .small-card span {
+            font-size: 45px;
+        }
+
+        footer {
+            height: 400px;
+            background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/855/original/sd-5.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #history {
+            background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/852/original/sd-4.jpg') #e36414;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a {
+            color: #e36414;
+            font-weight: 900;
+        }
+
+        a:focus,
+        a:hover {
+            color: #fb8b24;
         }
     </style>
+
 </head>
 
 <body>
@@ -92,13 +158,12 @@
         <div>
             <h1>Santo Domingo</h1>
             <br />
-            <h3>Visit the First European Settlement of the American continent & biggest Economic Center of the
+            <h3>Visit the First European Settlement of the American continent & <br />biggest Economic Center of the
                 Caribbean!</h3>
             <br /> <br />
             <button>GO SANTO DOMINGO</button>
         </div>
     </section>
-    <br />
     <section id="why" class="flex">
         <div>
             <h3>WHY SANTO DOMINGO?</h3>
@@ -126,17 +191,148 @@
         </div>
     </section>
     <br />
-    <section id="food" class="flex"></section>
+    <section id="food">
+        <br />
+        <h2>Try tasty food!</h2>
+        <br /><br />
+        <div class="flex">
+            <div class="card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.204278522156!2d-69.93358958526416!3d18.474403887435848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e7fed68279%3A0x6f7548e3f60fd74a!2sAv.%20Lope%20de%20Vega%20%26%20C.%20Max%20Henriquez%20Ure%C3%B1a%2C%20Santo%20Domingo%2C%20Rep%C3%BAblica%20Dominicana!5e0!3m2!1ses!2s!4v1667318923735!5m2!1ses!2s"
+                    width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Made in China</h4>
+                <br />
+                <h3>Address:</h3>
+                <p>Av. Lope de Vega esq. Max Henriquez Ureña</p>
+                <br />
+                <h3>Why you should visit?</h3>
+                <p>
+                    This is one of the best brunch spots in Santo Domingo but if you go
+                    at any time of day there will be something delicious on the
+                    menu!
+                </p>
+                <br /><br />
+                <a href="https://www.madeinchinard.com/" target="_blank" rel="noopener noreferrer" class="btn"
+                    alt="Made in China">LEARN MORE</a>
+                <br />
+            </div>
+            <div class="card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.237687565145!2d-69.9415574852642!3d18.4728897874367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e5b29fc9ad%3A0x863d40db690fc9e9!2sAv.%20Gustavo%20Mej%C3%ADa%20Ricart%20%26%20Calle%20Manuel%20de%20Jes%C3%BAs%20Troncoso%2C%20Santo%20Domingo%2C%20Rep%C3%BAblica%20Dominicana!5e0!3m2!1ses!2s!4v1667319153750!5m2!1ses!2s"
+                    width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Julieta Brasserie</h4>
+                <br />
+                <h3>Address:</h3>
+                <p>Av. Gustavo Mejia Ricart Esq. Manuel de Jesus Troncoso</p>
+                <br />
+                <h3>Why you should visit?</h3>
+                <p>
+                    Best customer service and European dishes in Santo Domingo!
+                </p>
+                <br /><br />
+                <a href="https://bocao.com.do/restaurantes/julieta-brasserie" target="_blank" rel="noopener noreferrer"
+                    class="btn" alt="Made in China">LEARN MORE</a>
+                <br />
+            </div>
+            <div class="card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.237687565145!2d-69.9415574852642!3d18.4728897874367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf898faaef9615%3A0x772bf24d967701e3!2sOkra%20Restaurant!5e0!3m2!1ses!2s!4v1667319475651!5m2!1ses!2s"
+                    width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Okra</h4>
+                <br />
+                <h3>Address:</h3>
+                <p>C. Julio Aybar Esq winston Churchill Torre Acropolis, Primer Nivel</p>
+                <br />
+                <h3>Why you should visit?</h3>
+                <p>
+                    A firework of great taste, it's hard not to walk into the kitchen and personally shake the cooks
+                    hand, thanking them for the privilege of eating their food.
+                </p>
+                <br /><br />
+                <a href="https://www.restaurantesrd.com/restaurantes/r/okra" target="_blank" rel="noopener noreferrer"
+                    class="btn" alt="Made in China">LEARN MORE</a>
+                <br />
+            </div>
+        </div>
+    </section>
     <br />
-    <section id="history" class="flex"></section>
-    <br />
-    <section id="family" class="flex"></section>
-    <br />
-    <section id="media" class="flex"></section>
-    <br />
+    <section id="history">
+        <br />
+        <h2>Enjoy history & culture!</h2>
+        <br />
+        <div class="flex"></div>
+    </section>
+    <section id="plan">
+        <br />
+        <h2>Plan your trip to Santo Domingo</h2>
+        <br /><br /><br />
+        <div class="flex">
+            <div class="small-card">
+                <span class="material-symbols-outlined">
+                    travel_explore
+                </span>
+                <br /><br />
+                <h3>Get a personalized trip</h3>
+                <p>A full day by day itinerary based on your preferences</p>
+            </div>
+            <div class="small-card">
+                <span class="material-symbols-outlined">
+                    calendar_today
+                </span>
+                <br /><br />
+                <h3>Customize it</h3>
+                <p>Refine your trip. We'll find the best routes and schedules</p>
+            </div>
+            <div class="small-card">
+                <span class="material-symbols-outlined">
+                    rocket_launch
+                </span>
+                <br /><br />
+                <h3>Book it</h3>
+                <p>Choose from the best hotels and activities. Up to 50% off</p>
+            </div>
+            <div class="small-card">
+                <span class="material-symbols-outlined">
+                    style
+                </span>
+                <br /><br />
+                <h3>Manage it</h3>
+                <p>Everything in one place. Everyone on the same page.</p>
+            </div>
+        </div>
+        <br /><br /><br />
+        <button>START PLANNING</button>
+        <br /><br />
+    </section>
+    <section id="media">
+        <br />
+        <h2>Santo Domingo in social media</h2>
+        <br />
+        <div class="flex">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CkYmSARLBJK">
+            </blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cguoyz2PBiX">
+            </blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CeoAvQtjMlh">
+            </blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CeUfHp6LCp7">
+            </blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CgW6oZoLe9m">
+            </blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CjY97C8rOby">
+            </blockquote>
+
+        </div>
+    </section>
+    <br /><br />
     <footer>
 
     </footer>
+    <!--Scripts-->
+    <script async src="//www.instagram.com/embed.js"></script>
 </body>
 
 </html>
