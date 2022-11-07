@@ -34,6 +34,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            gap: 10px;
         }
 
         #hero {
@@ -108,17 +109,31 @@
 
         blockquote {
             max-width: 400px;
-            max-height: 500px;
         }
 
         .card {
-            width: 300px;
             text-align: left;
-            max-height: 500px;
+            width: 400px;
+            padding: 10px;
+            border: 2px solid #e36414;
+            border-radius: 10px;
         }
 
         .small-card {
             width: 200px;
+            padding: 10px 20px;
+            border: 2px solid #e36414;
+            text-align: left;
+            border-radius: 10px;
+        }
+
+        .material-symbols-outlined {
+            color: #e36414;
+        }
+
+        .material-symbols-outlined:focus,
+        .material-symbols-outlined:hover {
+            transform: scale(1.1);
         }
 
         .small-card span {
@@ -131,6 +146,13 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            place-items: center;
+        }
+
+        footer div h3,
+        footer div p {
+            color: white;
+            text-shadow: 1px 1px 2px #e36414, 0 0 1em #fb8b24;
         }
 
         #history {
@@ -149,6 +171,18 @@
         a:hover {
             color: #fb8b24;
         }
+
+        .card-pic img {
+            border-radius: 10px;
+        }
+
+        .card-pic {
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #f9c594;
+            min-height: 370px;
+            max-width: 450px;
+        }
     </style>
 
 </head>
@@ -160,7 +194,7 @@
             <br />
             <h3>Visit the First European Settlement of the American continent & <br />biggest Economic Center of the
                 Caribbean!</h3>
-            <br /> <br />
+            <br /> <br /><br /> <br />
             <button>GO SANTO DOMINGO</button>
         </div>
     </section>
@@ -262,8 +296,47 @@
     <section id="history">
         <br />
         <h2>Enjoy history & culture!</h2>
-        <br />
-        <div class="flex"></div>
+        <br /><br />
+        <div class="flex">
+            <div class="card-pic">
+                <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/199/original/h-6.jpg?1667840743">
+                <br />
+                <h3>Archbishop's House • <em>built between 1523 & 1531</em></h3>
+            </div>
+            <div class="card-pic">
+                <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/198/original/h-5.jpg?1667840730">
+                <br />
+                <h3>Casa del Cordón • <em>built between 1502 & 1503</em></h3>
+            </div>
+            <div class="card-pic">
+                <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/197/original/h-4.jpg?1667840719">
+                <br />
+                <h3>Santa Bárbara Military Cathedral • <em>built between 1562 & 151684</em></h3>
+            </div>
+            <div class="card-pic">
+                <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/196/original/h-3.jpg?1667840711">
+                <br />
+                <h3>Church and Convent of Dominican Order • <em>built between 1510 & 1532</em></h3>
+            </div>
+            <div class="card-pic">
+                <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/195/original/h-2.jpg?1667840702">
+                <br />
+                <h3>Basilica Cathedral of Santa María la Menor • <em>built between 1504 & 1550</em></h3>
+            </div>
+            <div class="card-pic">
+                <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/194/original/h-1.jpg?1667840693">
+                <br />
+                <h3>Fortaleza Ozama • <em>built between 1502 & 1508</em></h3>
+            </div>
+        </div>
+        <br /><br /><br />
+        <a href="#">LEARN MORE</a>
     </section>
     <section id="plan">
         <br />
@@ -303,10 +376,10 @@
                 <p>Everything in one place. Everyone on the same page.</p>
             </div>
         </div>
-        <br /><br /><br />
+        <br /><br /><br /><br /> <br />
         <button>START PLANNING</button>
-        <br /><br />
     </section>
+    <br /><br /><br /><br /><br /><br />
     <section id="media">
         <br />
         <h2>Santo Domingo in social media</h2>
@@ -324,12 +397,24 @@
             </blockquote>
             <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CjY97C8rOby">
             </blockquote>
-
         </div>
     </section>
-    <br /><br />
-    <footer>
-
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <footer class="flex">
+        <div>
+            <h3>About me</h3>
+            <br />
+            <p>Hi! My name is Carmen and I'm from Santo Domingo. I'm very fond of the city.
+                This guide will be helpful if you are in town</p>
+        </div>
+        <div>
+            <h3>About this website</h3>
+            <br />
+            <p>I created this page as part of SheCodes Hometown Challengue to develop my coding skills.
+                This project was coded by Carmen Lopez and is <a
+                    href="https://github.com/cgbl-90/welcome_to_santo_domingo" target="_blank" rel="noopener noreferrer"
+                    alt="code">open sourced</a></p>
+        </div>
     </footer>
     <!--Scripts-->
     <script async src="//www.instagram.com/embed.js"></script>
